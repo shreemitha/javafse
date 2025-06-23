@@ -1,0 +1,34 @@
+1.Recursive Algorithms:
+
+   Recursion is when a method calls itself to solve smaller instances of a problem until it reaches a simple base case.
+
+It helps break down complex problems into simpler, repeatable parts. Instead of using loops, recursion can make some problems easier to write and understand—like calculating compound growth over multiple years.
+
+Example (Real-world analogy):
+Imagine calculating a bank balance that grows every year by a percentage.
+Instead of calculating year-by-year manually, you can say:
+
+FutureValue for year n = FutureValue for year (n-1) × (1 + growth rate)
+
+This is a perfect situation for recursion.
+
+
+2.Analysis: 
+
+Time Complexity:
+Time Complexity of basic recursion: O(n)
+Because we perform one recursive call for each year until 0.
+
+Space Complexity: Also O(n)
+Each recursive call adds a frame to the call stack.
+
+3.Optimization: How to Avoid Excessive Computation
+
+1. Memoization:
+Store the results of already-computed years in an array or map so they aren't calculated again.
+
+2. Use Iteration Instead:
+If recursion gets too deep, use a loop-based approach (for loop) to avoid call stack overflow.
+
+3. Tail Recursion (in functional programming):
+Some languages optimize recursive calls if written as tail recursion.
