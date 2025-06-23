@@ -1,0 +1,83 @@
+Asymptotic Notation:
+  
+     Asymptotic notation is a mathematical way to describe how the performance of an algorithm changes as the size of the input increases.Asymptotic notation helps us understand how slow or fast an algorithm will be in the long run, especially as data grows.
+
+Big O Notation:
+    
+     Big O notation is a way to describe the performance or complexity of an algorithm in terms of how it grows as the size of the input increases.
+
+It tells us:
+
+->How fast an algorithm is,
+
+->How it scales with more data,
+
+->And what the worst-case scenario looks like.
+
+
+Uses:
+
+-> Choose the most efficient algorithm,
+
+-> Understand performance bottlenecks,
+
+-> Predict how your program behaves with large inputs,
+
+-> Avoid slowdowns in real-world applications.
+
+
+  Big O focuses on the worst-case so you're prepared for the slowest scenario — important for real systems that must be reliable and consistent, like:
+
+* E-commerce search
+
+* Payment processing
+
+* Real-time apps.
+
+
+The best, average, and worst-case scenarios for search operations:
+
+1. Best Case:
+
+->This is the fastest possible outcome.
+
+->The item is found immediately, usually at the beginning.
+
+->Very rare in real life, but shows minimum effort needed.
+
+2. Average Case:
+
+->This is the typical case — what you might expect in general.
+
+->The item might be somewhere in the middle.
+
+->Gives a fair idea of expected performance.
+
+3. Worst Case:
+
+->This is the slowest possible outcome.
+
+->The item is at the very end or not present at all.
+
+->Important for designing reliable systems (we must handle slow cases too).
+
+
+Examples:
+
+1.Linear Search (going through elements one by one in a list):
+
+-> Best Case: The element is found at the first position. Time complexity is O(1).
+
+-> Average Case: The element is somewhere in the middle of the list. On average, you check half the elements, so time complexity is approximately O(n/2) which simplifies to O(n).
+
+-> Worst Case: The element is at the last position or not present at all. You need to check every element, so time complexity is O(n).
+
+
+2.Binary Search (used on a sorted list by dividing the list in half each time):
+
+-> Best Case: The element is right in the middle of the list in the first check. Time complexity is O(1).
+
+-> Average Case: The element is found after a few divisions of the list. Time complexity is O(log n).
+
+->  Worst Case: The element is found only after the maximum number of divisions (or not found at all). Time complexity is still O(log n).
+
